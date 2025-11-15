@@ -1,0 +1,294 @@
+/*Menu*/
+.TopHeader {
+  position: fixed;
+  background-color: #2563eb;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  text-decoration: none;
+  color: white;
+}
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 18.75rem;
+  list-style: none;
+  background-color: #2563eb;
+}
+.Menu-Horizontal li a:hover {
+  color: red;
+  font-size: 1.25rem;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.625rem;
+}
+
+/*Seccion Quienes Somos*/
+.seccion-QuienesSomos {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.cont-gral-QuienesSomos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.cont-QuienesSomos-texto {
+  flex: 1;
+}
+.cont-QuienesSomos-texto h1 {
+  color: #2563eb;
+  margin-bottom: 0.938rem;
+}
+.cont-QuienesSomos-texto h2 {
+  color: #2563eb;
+}
+.cont-QuienesSomos-texto p {
+  color: black;
+  line-height: 1.4;
+}
+.cont-QuienesSomos-Imagen {
+  flex: 1;
+}
+.cont-QuienesSomos-Imagen img {
+  width: 100%;
+  max-width: 31.25rem;
+  border-radius: 1.25rem;
+}
+/*Seccion Cuidado del Cabello*/
+.Seccion-CuidadoCabello {
+  background-color: white;
+  padding: 6.25rem 1.25rem 3.75rem;
+}
+
+.cont-gral-CuidadoCabello {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Tarjeta base */
+.tarjeta-producto {
+  background-color: #f3f4f6;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  width: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Imagen */
+.tarjeta-img {
+  background-color: #e5e7eb;
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.tarjeta-img img {
+  width: 100%;
+  max-width: 9.375rem;
+  height: auto;
+}
+
+/* Info */
+.tarjeta-info {
+  text-align: center;
+  background-color: white;
+  padding: 0.625rem 0;
+}
+
+.tarjeta-info p {
+  margin: 0.313rem 0;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Footer de tarjeta */
+.tarjeta-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-top: 0.063rem solid #e5e7eb;
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 0.625rem 0.938rem;
+}
+
+/* Botón carrito */
+.btn-carrito {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-carrito:hover {
+  background-color: #1e4ed8;
+}
+
+/* Icono corazón */
+.icono-corazon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+/*Seccion VitaminasSuplementos*/
+.Seccion-VitaminasSuplementos {
+  background-color: white;
+  padding: 6.25rem 1.25rem 3.75rem;
+}
+
+.cont-gral-VitaminasSuplementos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+/*Seccion Formulario*/
+.seccion-Formulario {
+  background-color: #a4e0dd;
+  padding: 2.5rem;
+  border: 0.188rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.cont-gral-Formulario {
+  background-color: #e5e7eb;
+  padding: 1.875rem;
+  border: 0.125rem solid rgb(3, 3, 139);
+  border-radius: 0.5rem;
+  margin-bottom: 1.875rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  background-color: #f3f4f6;
+  padding: 0.938rem;
+  border: 0.094rem solid black;
+  border-radius: 0.313rem;
+  margin-bottom: 0.938rem;
+}
+.Formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+  color: black;
+}
+
+#email {
+  width: 100%;
+}
+#nombre {
+  width: 100%;
+}
+#pais {
+  width: 50%;
+}
+#telefono {
+  width: 50%;
+}
+#sexo {
+  width: 50%;
+}
+.Formulario button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*Footer*/
+.seccion-footer {
+  background: #2962ff;
+  color: white;
+  align-items: center;
+  padding: 0.938rem 0;
+}
+
+.cont-gral-footer {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.footer-info {
+  flex: 1;
+  min-width: none;
+}
+.footer-info h3 {
+  color: white;
+  margin-bottom: 0.938rem;
+}
+.footer-redes {
+  flex: 1;
+}
+.footer-redes h3 {
+  color: #fff;
+  margin-bottom: 0.938rem;
+}
+.lista-redes {
+  list-style: none;
+  padding: 0;
+}
+.lista-redes {
+  list-style: none;
+  padding: 0;
+}
+.lista-redes li {
+  margin-bottom: 0.5rem;
+}
+.lista-redes li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-politicas {
+  flex: 1;
+}
+.lista-politicas {
+  list-style: none;
+}
+
+.lista-politicas a {
+  text-decoration: none;
+  color: white;
+}
+.lista-politicas li a:hover {
+  color: red;
+  font-size: 1.25rem;
+}
