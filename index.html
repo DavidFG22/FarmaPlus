@@ -1,317 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Web Site</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <!--Logo y Menu-->
-    <nav class="TopHeader">
-      <a href="" class="Logo">
-        <img height="50" width="50" src="Images/logotipo.png" alt="" />
-      </a>
-      <ul class="Menu-Horizontal">
-        <li><a href="#QuienesSomos">Quienes Somos</a></li>
-        <li>
-          <a href="#CuidadoCabello">Cuidado del cabello</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Shampoo</a></li>
-            <li><a href="">Acondicionador</a></li>
-            <li><a href="">Cremas reparadoras</a></li>
-            <li><a href="">Reacondicionador</a></li>
-          </ul>
-        </li>
-        <li><a href="#VitaminasSuplementos">Vitaminas y Suplementos</a></li>
-        <li><a href="">Cuidado Personal</a></li>
-        <li><a href="">Fotoprotección</a></li>
-        <li><a href="#Contactanos">Contactanos</a></li>
-      </ul>
-    </nav>
-    <!--Seccion Quienes Somos-->
-    <section class="seccion-QuienesSomos" id="QuienesSomos">
-      <div class="cont-gral-QuienesSomos">
-        <div class="cont-QuienesSomos-texto">
-          <h1>FarmaPlus</h1>
-          <p>
-            Somos una farmacia dedicada a entregar y recomendar los mejores
-            productos o medicamentos, con los mejores estandares de calidad para
-            ello contamos con un riguroso control de calidad y trabajamos con
-            los mejores distribuidores.
-          </p>
-          <h2>Misión</h2>
-          <p>
-            Nuestra misión es ofrecer productos de calidad para todo tipo de
-            publico y ofertar los mejores precios justos.
-          </p>
-          <h2>Visión</h2>
-          <p>
-            Tenemos como visión ser la mejor farmacia costo-beneficio de toda
-            latinoamerica
-          </p>
-        </div>
-        <div class="cont-QuienesSomos-Imagen">
-          <img
-            src="Images/madre-dando-el-biberon-a-su-hijo-ISF00558.jpg"
-            alt="Madre con su hijo"
-          />
-        </div>
-      </div>
-    </section>
-    <!--Seccion Cuidado del cabello-->
-    <section class="Seccion-CuidadoCabello" id="CuidadoCabello">
-      <h2>Cuidado del cabello</h2>
-      <div class="cont-gral-CuidadoCabello">
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/shampoo1.webp" alt="Shampoo 1" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Shampoo Pantene</p>
-            <p>Precio: S/. 25.00</p>
-            <p>Unidades Disponibles: 5</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
+    <img src="Images/fondoLogin.jpg" alt="fondoLogin" class="bg-image" />
+    <section class="login-container">
+      <div class="login-box">
+        <h2>FarmaPlus</h2>
 
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/shampoo2.avif" alt="Shampoo 2" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Shampoo Head & Shoulders</p>
-            <p>Precio: S/. 20.00</p>
-            <p>Unidades Disponibles: 3</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/shampoo3.webp" alt="Shampoo 3" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Shampoo Savital</p>
-            <p>Precio: S/. 19.00</p>
-            <p>Unidades Disponibles: 10</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/shampoo4.webp" alt="Shampoo 4" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Shampoo Sedal</p>
-            <p>Precio: S/. 30.00</p>
-            <p>Unidades Disponibles: 5</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Seccion Vitaminas y suplementos-->
-    <section class="Seccion-VitaminasSuplementos" id="VitaminasSuplementos">
-      <h2>Vitaminas y suplementos</h2>
-      <div class="cont-gral-VitaminasSuplementos">
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/Vitamina1jpg.jpg" alt="Vitamina 1" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Sleep Cápsula</p>
-            <p>Precio: S/. 20.00</p>
-            <p>Unidades Disponibles: 5</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/Vitamina2.jpg" alt="Vitamina 2" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Citrato de Magnesio</p>
-            <p>Precio: S/. 40.00</p>
-            <p>Unidades Disponibles: 12</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/Vitmaina3.jpg" alt="Vitamina 3" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Omega 3</p>
-            <p>Precio: S/. 39.00</p>
-            <p>Unidades Disponibles: 10</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-        <div class="tarjeta-producto">
-          <div class="tarjeta-img">
-            <img src="Images/Vitamina4.jpg" alt="Vitamina 4" />
-          </div>
-          <div class="tarjeta-info">
-            <p>Aceite de Coco</p>
-            <p>Precio: S/. 15.00</p>
-            <p>Unidades Disponibles: 5</p>
-          </div>
-          <div class="tarjeta-footer">
-            <button class="btn-carrito">Añadir al carrito</button>
-            <img
-              src="Images/me-gusta.png"
-              alt="Favorito"
-              class="icono-corazon"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="seccion-Formulario" id="Contactanos">
-      <div class="cont-gral-Formulario">
-        <h2>Formulario</h2>
-        <p>Complete los datos</p>
-        <form class="Formulario">
-          <div class="campo">
-            <label for="nombre">Nombres Completos:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese su nombre"
-            />
-          </div>
-          <div class="campo">
-            <label for="pais">País:</label>
-            <select name="pais" id="pais">
-              <option value="">Seleccione un país</option>
-              <option value="peru">Perú</option>
-              <option value="colombia">Colombia</option>
-              <option value="Venezuela">Venezuela</option>
-              <option value="chile">Chile</option>
-            </select>
-          </div>
-          <div class="campo">
-            <label for="email">Email:</label>
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Ingrese su correo electronico"
+              placeholder="Introduce tu email"
+              required
             />
           </div>
-          <div class="campo">
-            <label for="telefono">Teléfono:</label>
+
+          <div class="input-group">
+            <label for="password">Clave de Acceso (ok)</label>
             <input
-              type="text"
-              id="telefono"
-              name="telefono"
-              placeholder="Ingrese su telefono"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
             />
           </div>
-          <div class="campo">
-            <label for="sexo">Sexo:</label>
-            <select name="sexo" id="sexo">
-              <option value="">Seleccione su sexo</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Femenino">Femenino</option>
-              <option value="otros">Otros</option>
-            </select>
-          </div>
-          <div>
-            <button type="submit">Enviar</button>
-          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
         </form>
       </div>
     </section>
-    <!--Pie de Pagina-->
-    <section class="seccion-footer">
-      <div class="cont-gral-footer">
-        <div class="footer-info">
-          <h3>Acerca de nosotros</h3>
-          <p>
-            FarmaPlus fue creada en el año 2019 como una startup dedicada a la
-            entrega de medicamentos por delivery
-          </p>
-          <p>&copy: 2025 Todos los derechos reservados</p>
-        </div>
 
-        <div class="footer-redes">
-          <h3>Nuestras redes</h3>
-          <ul class="lista-redes">
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Telegram</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">X</a></li>
-          </ul>
-        </div>
-        <div class="footer-politicas">
-          <h3>Proteccion de Datos</h3>
-          <ul class="lista-politicas">
-            <li>
-              <a href="Images/obtenerDocumento.pdf"
-                >Ley de Proteccion de Datos</a
-              >
-            </li>
-            <li><a href="">Politicas</a></li>
-            <li><a href="">Normas</a></li>
-            <li><a href="">Reglamento</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <script src="login.js"></script>
   </body>
 </html>
